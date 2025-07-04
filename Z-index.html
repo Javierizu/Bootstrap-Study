@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Bootstrap</title>
+
+  <!-- CSS -->
+  <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body style="height: 5000px;">
+
+	<h1>Z-Index</h1>
+	<br>
+	<div class="position-relative" style="height: 200px; width: 200px;">
+	<div class="z-3 border border-primary bg-primary-subtle position-absolute" style="top: 0; left: 0; width: 200px; height: 200px;"></div>
+	<div class="z-2 border border-primary bg-primary-subtle position-absolute" style="top: 20px; left: 20px; width: 200px; height: 200px;"></div>
+	<div class="z-1 border border-primary bg-primary-subtle position-absolute" style="top: 40px; left: 40px; width: 200px; height: 200px;"></div>
+	<div class="z-0 border border-primary bg-primary-subtle position-absolute" style="top: 60px; left: 60px; width: 200px; height: 200px;"></div>
+	<div class="z-n1 border border-primary bg-primary-subtle position-absolute" style="top: 80px; left: 80px; width: 200px; height: 200px;"></div>
+	</div>
+	<br><br><br><br><br><br><br>
+
+	<h1>Interaction</h1>
+	<br>
+	<p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+	<p class="user-select-auto">This paragraph has default select behavior.</p>
+	<p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+	<br> <br>
+	<p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
+	<p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).</p>
+	<p class="pe-none"><a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this link</a> has a <code>pe-auto</code> class and can be clicked.</p>
+	<br><br>
+
+	<h1>Image</h1>
+	<div class="d-flex flex-wrap justify-content-between">
+	<img src="photo-1491466424936-e304919aada7.jpg" alt="images" class="img-fluid">
+	<img src="images.jpg" alt="images" class="img-thumbnail m-5 float-start">
+	<img src="images.jpg" alt="images" class="img-thumbnail m-5 float-end">
+	</div>
+	<br><br>
+
+	<h1>Figure</h1>	
+	<figure class="figure m-5">
+		<img src="images.jpg" alt="" class="figure-img img-fluid rounded">	
+		<figcaption class="figure-caption">A caption for the above image.</figcaption>
+	</figure>
+	<br><br>
+
+	<h1>Object Fit</h1>
+	<br>
+	<img src="photo-1491466424936-e304919aada7.jpg" alt="photo-1491466424936-e304919aada7" style="width: 500px; height: 500px; object-fit: cover;">
+	<br><br>
+
+	<h1>Table</h1>
+	<table class="table table-striped table-dark table-hover table-bordered" >
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr class="">
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td class="table-warning">John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td class="">Pudi</td>
+      <td>Meh</td>
+      <td>@racist</td>
+    </tr>
+  </tbody>
+	<table class="table table-sm table-striped table-warning table-hover table-bordered border-black" >
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr class="">
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td class="">John</td>
+      <td>Doe</td>
+      <td>@social</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td class="">Pudi</td>
+      <td>Meh</td>
+      <td>@racist</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+  <!-- Script -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
